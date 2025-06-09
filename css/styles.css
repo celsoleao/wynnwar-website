@@ -1280,5 +1280,82 @@ section {
         border-radius: 10px;
         margin-bottom: 20px;
     }
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-image {
+        max-width: 280px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            max-width: 280px;
+        }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            text-align: center;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+        .hero-buttons .btn-primary,
+        .hero-buttons .btn-secondary {
+            padding: 12px 24px;
+            font-size: 0.9rem;
+            min-width: 140px;
+        }
+}
+
+/* Additional mobile improvements for smaller screens */
+@media screen and (max-width: 480px) {
+    .hero-image {
+        max-width: 240px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+        max-width: 280px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .hero-buttons .btn-primary,
+        .hero-buttons .btn-secondary {
+            width: 200px;
+            text-align: center;
+        }
 }
 
